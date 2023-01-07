@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // https://expressjs.com/en/resources/middleware/cors.html
-var corsOptions = {
+/*var corsOptions = {
   // not good for production
   origin: '*',
   optionsSuccessStatus: 200,
@@ -19,6 +19,7 @@ var corsOptions = {
 app.use(cors(corsOptions));
 // CORS preflight
 app.options('*', cors(corsOptions));
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
