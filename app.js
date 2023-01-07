@@ -10,9 +10,10 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// https://expressjs.com/en/resources/middleware/cors.html
 var corsOptions = {
   // not good for production
-  origin: '*',
+  origin: ['http://localhost', 'http://localhost:3000'],
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
