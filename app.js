@@ -13,7 +13,7 @@ var app = express();
 // https://expressjs.com/en/resources/middleware/cors.html
 var corsOptions = {
   // not good for production
-  origin: ['http://localhost', 'http://localhost:3000'],
+  origin: '*',
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
